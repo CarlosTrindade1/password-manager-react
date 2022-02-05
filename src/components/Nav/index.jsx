@@ -32,31 +32,31 @@ export function Nav() {
       <ul className="navbar-menu">
         <li>
           <a href="/" className="menu-item">
-            <AiOutlineHome size={34} className="menu-link-icon" />
+            <AiOutlineHome size={28} className="menu-link-icon" />
             <span>Dashboard</span>
           </a>
         </li>
         <li>
           <a href="/" className="menu-item">
-            <BsTwitter size={34} className="menu-link-icon" />
+            <BsTwitter size={28} className="menu-link-icon" />
             <span>Twitter</span>
           </a>
         </li>
         <li>
           <a href="/" className="menu-item">
-            <BsGoogle size={34} className="menu-link-icon" />
+            <BsGoogle size={28} className="menu-link-icon" />
             <span>Google</span>
           </a>
         </li>
         <li>
           <a href="/" className="menu-item">
-            <BsFacebook size={34} className="menu-link-icon" />
+            <BsFacebook size={28} className="menu-link-icon" />
             <span>Facebook</span>
           </a>
         </li>
         <li>
           <a href="/" className="menu-item">
-            <AiOutlineMail size={34} className="menu-link-icon" />
+            <AiOutlineMail size={28} className="menu-link-icon" />
             <span>E-mail</span>
           </a>
         </li>
@@ -65,7 +65,7 @@ export function Nav() {
       <hr />
       <footer>
         <div className="footer-logout">
-          <BiLogOut size={34} className="footer-logout-icon" />
+          <BiLogOut size={28} className="footer-logout-icon" />
           <span>Sair</span>
         </div>
       </footer>

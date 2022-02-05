@@ -1,0 +1,103 @@
+.login {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login .login-container {
+  width: 500px;
+  height: 550px;
+  background-color: var(--sidebar-color);
+  padding: 30px;
+}
+
+.login .login-container div h1 {
+  font-weight: 400;
+  margin-top: 45px;
+}
+
+.login .login-container div h1 span {
+  border-bottom: 3px solid var(--primary-color);
+}
+
+.login .login-container form {
+  margin: 50px 0 35px 0;
+}
+
+.login .login-container form p {
+  margin-bottom: 50px;
+}
+
+.login .login-container form p a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.login .login-container form button {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  transition: var(--tran-05);
+}
+
+.login .login-container form button:hover {
+  background-color: #fff;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.login .login-container form .login-input {
+  display: flex;
+  align-items: center;
+  border-bottom: 2.5px solid #cecece;
+  margin: 20px 0;
+}
+
+.login .login-container form .login-input input {
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  width: 400px;
+}
+
+.login .login-container div .login-register {
+  text-align: center;
+}
+
+.login .login-container div .login-register a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.login .login-image {
+  background: url("../../../assets/images/login-image.jpg");
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* background: rgba(0, 0, 0, 0.3); */
+}
+
+.login-image-text {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 48px;
+  font-weight: 300;
+}

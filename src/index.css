@@ -27,3 +27,7 @@ body {
   height: 100vh;
   background: var(--body-color);
 }
+
+#root {
+  height: 100%;
+}

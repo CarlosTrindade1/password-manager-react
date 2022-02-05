@@ -58,7 +58,7 @@
   height: 55px;
   padding: 20px 10px;
   color: var(--text-color);
-  font-size: 18px;
+  font-size: 14px;
   border-radius: 7px;
   transition: var(--tran-05);
   text-decoration: none;
@@ -84,7 +84,7 @@
   height: 55px;
   padding: 20px 10px;
   color: var(--text-color);
-  font-size: 18px;
+  font-size: 14-px;
   border-radius: 7px;
   transition: var(--tran-05);
   cursor: pointer;
