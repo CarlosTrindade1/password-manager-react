@@ -4,17 +4,11 @@ import PropTypes from 'prop-types';
 export const AuthContext = createContext({});
 
 export function AuthProvider({ children }) {
-  const [user, setUser] = useState({
-    isLoggedIn: false,
-  });
-
-  function signOut() {
-    setUser(null);
-  }
+  const [user, setUser] = useState({});
 
   return (
     // eslint-disable-next-line
-    <AuthContext.Provider value={{ user, signOut }}>
+    <AuthContext.Provider value={{ user, setUser }}>
       {children}
     </AuthContext.Provider>
   );

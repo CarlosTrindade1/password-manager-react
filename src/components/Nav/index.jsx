@@ -1,11 +1,27 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { FaLock, FaSearch } from 'react-icons/fa';
 import { AiOutlineHome, AiOutlineMail } from 'react-icons/ai';
 import { BsTwitter, BsGoogle, BsFacebook } from 'react-icons/bs';
 import { BiLogOut } from 'react-icons/bi';
+
+import { AuthContext } from '../../context/auth';
+
 import './styles.css';
 
 export function Nav() {
+  const navigate = useNavigate();
+  const { setUser } = useContext(AuthContext);
+
+  function signOut(event) {
+    event.preventDefault();
+
+    setUser({});
+    localStorage.removeItem('@password-manager');
+
+    navigate('/');
+  }
+
   return (
     <nav className="navbar">
       <header>
@@ -64,10 +80,10 @@ export function Nav() {
 
       <hr />
       <footer>
-        <div className="footer-logout">
+        <button type="button" onClick={signOut} className="footer-logout">
           <BiLogOut size={28} className="footer-logout-icon" />
           <span>Sair</span>
-        </div>
+        </button>
       </footer>
     </nav>
   );
