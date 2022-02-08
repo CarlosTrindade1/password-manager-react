@@ -1,0 +1,13 @@
+.header {
+  grid-area: header;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 1px solid #cecece;
+}
+
+.header h1 {
+  color: var(--text-color);
+  font-weight: 400;
+}
