@@ -3,6 +3,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 
 import { AuthContext } from './context/auth';
+import api from './services/api';
 
 import './App.css';
 import 'react-toastify/dist/ReactToastify.css';
@@ -19,6 +20,7 @@ function App() {
 
     if (localStorageObject) {
       setUser(localStorageObject.user);
+      api.defaults.headers.common.authorization = `Bearer ${localStorageObject.token}`;
     }
   }, []);
 

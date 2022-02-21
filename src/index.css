@@ -41,3 +41,9 @@ body {
     "menu header"
     "menu content";
 }
+
+.two-columns-form {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0;
+}

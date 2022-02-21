@@ -1,0 +1,103 @@
+.dashboard {
+  grid-area: content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard .password-form {
+  background-color: #fff;
+  padding: 20px;
+  width: 600px;
+  border-radius: 7px;
+  color: var(--text-color);
+}
+
+.dashboard .password-form h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+.dashboard .password-form form button {
+  width: 100%;
+  border: none;
+  height: 50px;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: var(--tran-05);
+}
+
+.dashboard .password-form form button:hover {
+  border: 1px solid var(--primary-color);
+  background-color: #fff;
+  color: var(--primary-color);
+}
+
+.dashboard .password-form form .password-form-input-account {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.dashboard .password-form form .password-form-input-account p {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.dashboard .password-form form .password-form-input-account input {
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 5px;
+  color: var(--text-color);
+
+}
+
+.dashboard .password-form .password-form-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid var(--primary-color);
+  margin-bottom: 30px;
+  padding: 10px;
+}
+
+.dashboard .password-form .password-form-input p{
+  font-size: 18px;
+  color: var(--text-color);
+  width: 282px;
+}
+
+.dashboard .password-form .password-form-input button {
+  border: none;
+  width: 50px;
+  height: 30px;
+  border-radius: 7px;
+  background-color: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--tran-05);
+}
+
+.dashboard .password-form .password-form-input button:hover {
+  border: 1px solid var(--primary-color);
+  background-color: #fff;
+  color: var(--primary-color);
+}
+
+.dashboard .password-form .password-form-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.dashboard .password-form .password-form-checkbox p {
+  margin-right: 10px;
+}

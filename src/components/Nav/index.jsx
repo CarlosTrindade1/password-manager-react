@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { FaLock, FaSearch } from 'react-icons/fa';
 import { AiOutlineHome, AiOutlineMail } from 'react-icons/ai';
 import { BsTwitter, BsGoogle, BsFacebook } from 'react-icons/bs';
@@ -47,10 +47,10 @@ export function Nav() {
 
       <ul className="navbar-menu">
         <li>
-          <a href="/" className="menu-item">
+          <Link to="/dashboard" className="menu-item">
             <AiOutlineHome size={28} className="menu-link-icon" />
             <span>Dashboard</span>
-          </a>
+          </Link>
         </li>
         <li>
           <a href="/" className="menu-item">
